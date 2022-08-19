@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.logo-responsividade {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d1ae6c28;
+}
+
+.menu img {
+  width: 7vw;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.menu-itens {
+  margin-right: 20px;
+}
+
+.menu-itens a {
+  text-decoration: none;
+  margin-right: 40px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.menu-itens a:hover {
+  border-top: 3px solid #363435;
+}
+
+#primeiro-container {
+  height: 75vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(./direito.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textos {
+  width: 50vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textos h1 {
+  font-size: 2.5em;
+}
+
+.textos p {
+  font-size: 1.5em;
+}
+
+.textos h4 {
+  font-size: 2em;
+  margin-top: 1em;
+}
+
+#formulario-inicial {
+  background-color: #95989ab5;
+  padding: 2em;
+  min-width: 25%;
+}
+
+#formulario-inicial p {
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 1em;
+}
+
+.form-campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8em;
+}
+
+.form-campo label {
+  color: #363435;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+
+.form-campo input,
+.form-campo select {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  background-color: #363435;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+#secao-sobre {
+  background-color: #C0C0C0;
+  padding: 3em;
+  width: 100%;
+}
+
+.servicos {
+  display: flex;
+  width: 100vw;
+}
+
+.card {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.card-oculto {
+  display: none;
+}
+
+.card h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.card:hover {
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card:hover img {
+  display: none;
+}
+
+.card:hover .card-original {
+  display: none;
+}
+
+.card:hover .card-oculto {
+  display: block;
+}
+
+#nossa-equipe {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d1ae6c28;
+}
+
+#nossa-equipe h5 {
+  width: 30vw;
+  text-align: center;
+  font-size: 2em;
+  color: black;
+  border-bottom: 2px solid black;
+  margin-top: 20px;
+}
+
+.profissionais {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  margin: 20px 0;
+}
+
+.adv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20%;
+  color: #363435;
+}
+
+.adv h6 {
+  font-size: 2em;
+}
+
+.adv img {
+  border-radius: 50%;
+  width: 40%;
+  margin: 0.75em 0;
+}
+
+#servicos {
+  background-color: #C0C0C0;
+  overflow: hidden;
+}
+
+.servico-adv {
+  margin-top: 3em;
+  display: flex;
+  width: 20%; /* porque são 5 imagens */
+  transition: 0.6s;
+}
+
+.servico-adv img {
+  width: 80%;
+  height: 80%;
+  margin-left: 3em;
+}
+
+.texto-servico h5 {
+  font-size: 2em;
+  margin-left: 2.2em;
+  width: 40%;
+  border-bottom: 2px solid #363435;
+}
+
+.texto-servico p {
+  font-size: 1em;
+  margin: 0 2.5em;
+  padding: 2em;
+}
+  
+.passar-slides {
+  transform: translate(43%);
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.passar-slides label {
+  width: 2vw;
+  height: 1.5vh;
+  border: 2px solid white;
+  margin: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.passar-slides label:hover {
+  background: white;
+}
+
+.slides input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 500%; /* porque são 5 imagens */
+}
+
+#slide1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+#contato {
+  background-color: #d1ae6c28;
+  padding: 2em;
+}
+
+#contato h5 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.campos-contato {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.sociais, .dias-horarios, .tel-loc {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.icone-texto {
+  display: flex;
+  margin-top: 15px;
+}
+
+.icone-texto p {
+  margin-left: 10px;
+}
+
+box-icon {
+  transition: all 0.4s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+box-icon:hover {
+  transform: scale(1.3);
+}
+
+.rodape {
+  display: flex;
+  height: 70px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #363435;
+}
+
+.rodape h3 a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.3s;
+  color: #d1ae6c;
+}
+
+.rodape span {
+  color: white;
+}
+
+
+/*RESPONSIVIDADE*/
+@media (max-width: 450px) {
+  .menu {
+    display: none;
+  }
+  .logo-responsividade {
+    display: flex;
+    justify-content: center;
+  }
+  #primeiro-container {
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(./direito-mobile.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .textos {
+    display: none;
+  }
+  #formulario-inicial {
+    max-width: 70%;
+  }
+  #formulario-inicial p {
+    text-align: center;
+  }
+  #secao-sobre {
+    padding: 10px;
+  }
+  #secao-sobre .card img {
+    width: 50%;
+  }
+  #secao-sobre .card {
+    width: 50%;
+   }
+  #secao-sobre .card h3 {
+   font-size: 1em;
+  }
+  #secao-sobre .card-original {
+    width: 15vw;
+   }
+  #nossa-equipe h5 {
+    text-align: center;
+    font-size: 1.5em;
+    width: 90%;
+    color: black;
+    border-bottom: 0;
+    margin-top: 20px;
+  }
+  #nossa-equipe p {
+    display: none;
+  }
+  .adv h6 {
+    text-align: center;
+    font-size: 1.2em;
+  } 
+  .adv img {
+    width: 100%;
+  }
+  .servico-adv img {
+    display: none;
+  }
+  .texto-servico h5 {
+    font-size: 1.5em;
+    text-align: center;
+    width: 80%;
+    border-bottom: 0;
+  }
+  .texto-servico p {
+    font-size: 1em;
+    padding: 2em;
+    text-align: center;
+  }
+  .passar-slides {
+    transform: translate(33%);
+  }
+  .passar-slides label {
+    width: 5vw;
+    height: 1.5vh;
+  }
+  #contato {
+    padding: 1em;
+  }
+  #contato h5 {
+    font-size: 0.75em;
+    border-bottom: 0;
+  }
+  .icone-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .icone-texto p {
+    font-size: 0.75em;
+  }
+  .rodape {
+    height: 50px;
+  }
+  .rodape h3 a {
+    font-size: 16px;
+  }
+  .rodape span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 870px) {
+  .textos {
+    width: 40vw;
+    padding: 1em;
+  }
+  .textos h1 {
+    font-size: 2em;
+  }
+  .textos p {
+    font-size: 1em;
+  }
+  #formulario-inicial {
+    padding: 1em;
+    min-width: 20%;
+  }
+  #secao-sobre {
+    padding: 5px;
+  }
+  .adv h6 {
+    text-align: center;
+    font-size: 1em;
+  } 
+  .servico-adv img {
+    display: none;
+  }
+  .texto-servico h5 {
+    font-size: 1.5em;
+    text-align: center;
+    width: 80%;
+    border-bottom: 0;
+  }
+  .texto-servico p {
+    font-size: 1em;
+    padding: 2em;
+    text-align: center;
+  }
+  .passar-slides {
+    transform: translate(33%);
+  }
+  .passar-slides label {
+    width: 5vw;
+    height: 1.5vh;
+  }
+  #contato h5 {
+    text-align: center;
+    font-size: 1em;
+    border-bottom: 0;
+  }
+  .icone-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .icone-texto p {
+    font-size: 0.75em;
+  }
+  .rodape {
+    height: 50px;
+  }
+  .rodape h3 a {
+    font-size: 16px;
+  }
+  .rodape span {
+    font-size: 14px;
+  }
+}

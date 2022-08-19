@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>A&B Advogados Associados | Landing Page | Projeto Marina</title>
+  </head>
+  <body>
+    
+    <!-- MENU DE NAVEGAÇÃO -->
+    <div class="menu">
+      <img src="./logo.png" alt="imagem-logo" class="logo" id="inicio">
+      <div class="menu-itens">
+        <a href="#secao-sobre">Sobre Nós</a>
+        <a href="#nossa-equipe">Nossa Equipe</a>
+        <a href="#servicos">Áreas de Atuação</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+
+    <!-- A LOGO SERÁ INSERIDA AQUI AO TORNAR O SITE RESPONSIVO PARA MOBILE-->
+    <div class="logo-responsividade">
+      <img src="./logo.png" alt="logo-empresa">
+    </div>
+
+    <div id="primeiro-container">
+      <div class="textos">
+        <!-- TEXTOS AO LADO ESQUERDO DA TELA, NA IMAGEM DE FUNDO -->
+        <h1>A&B ADVOGADOS ASSOCIADOS</h1>
+        <p>Especializados em Constitucional, Criminal e Trabalhista</p>
+        <h4>DÚVIDAS?</h4>
+        <p>Estamos aqui para auxiliar!</p>
+        <p>Preencha o formulário ao lado para maiores informações</p>
+      </div>
+      
+      <!-- FORMULÁRIO INICIAL PARA CONTATO -->
+      <section id="formulario-inicial">
+        <p>FORMULÁRIO PARA CONTATO INICIAL</p>
+        <form>
+          <div class="form-campo">
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="nome">
+          </div>
+
+          <div class="form-campo">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              placeholder="Digite seu melhor e-mail"
+              id="email"
+            />
+          </div>
+
+          <div class="form-campo">
+            <label for="tel">Telefone</label>
+            <input type="tel" placeholder="Número de Whatsapp" id="tel">
+          </div>
+
+          <div class="form-campo">
+            <label for="interesse">Área de Interesse</label>
+            <select id="interesse" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Constitucional</option>
+              <option>Criminal</option>
+              <option>Trabalhista</option>
+              <option>Assessoria</option>
+              <option>Acompanhamento</option>
+            </select>
+          </div>
+
+          <input type="submit" class="btn" value="ENVIAR">
+        </form>
+      </section>
+    </div>
+    <!-- FIM FORMULÁRIO -->
+
+    <!-- SEÇÃO SOBRE A EMPRESA -->
+    <div id="secao-sobre">
+      <div class="servicos">
+        <div class="card">
+          <div class="card-original">
+            <h3>EMPRESA</h3>
+            <img src="./empresa.png" alt="empresa">
+          </div>
+
+          <div class="card-oculto">
+            <h3>SOBRE A EMPRESA</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus ducimus, quae quas voluptatibus facere minima
+              repudiandae exercitationem cumque! Natus ipsum esse ullam mollitia
+              quae quos maiores consequatur, perferendis eaque quibusdam! Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-original">
+            <h3>MISSÃO</h3>
+            <img src="./missao.png" alt="missao">
+          </div>
+
+          <div class="card-oculto">
+            <h3>NOSSA MISSÃO</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus ducimus, quae quas voluptatibus facere minima
+              repudiandae exercitationem cumque! Natus ipsum esse ullam mollitia
+              quae quos maiores consequatur, perferendis eaque quibusdam! Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-original">
+            <h3>VALORES</h3>
+            <img src="./valores.png" alt="valores">
+          </div>
+
+          <div class="card-oculto">
+            <h3>NOSSOS VALORES</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus ducimus, quae quas voluptatibus facere minima
+              repudiandae exercitationem cumque! Natus ipsum esse ullam mollitia
+              quae quos maiores consequatur, perferendis eaque quibusdam! Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-original">
+            <h3>VISÃO</h3>
+            <img src="./visao.png" alt="visao">
+          </div>
+
+          <div class="card-oculto">
+            <h3>VISÃO DA EMPRESA</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Accusamus ducimus, quae quas voluptatibus facere minima
+              repudiandae exercitationem cumque! Natus ipsum esse ullam mollitia
+              quae quos maiores consequatur, perferendis eaque quibusdam! Lorem
+              ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM SEÇÃO SOBRE A EMPRESA -->
+
+    <!-- SEÇÃO QUEM SÃO OS PROFISSIONAIS DA EMPRESA -->
+    <section id="nossa-equipe">
+      <h5>CONHEÇA NOSSOS PROFISSIONAIS</h5>
+      <div class="profissionais">
+        <div class="adv">
+          <h6>Adamastor Bandeira</h6>
+          <img src="./homem.jpg" alt="adv1">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+            iste, id expedita, est quis nulla voluptates ipsam debitis molestiae
+            inventore vel. Nulla numquam odio optio assumenda nam. Cum, incidunt
+            praesentium!
+          </p>
+        </div>
+        <div class="adv">
+          <h6>Amanda Barros</h6>
+          <img src="./mulher.jpg" alt="adv2">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+            iste, id expedita, est quis nulla voluptates ipsam debitis molestiae
+            inventore vel. Nulla numquam odio optio assumenda nam. Cum, incidunt
+            praesentium!
+          </p>
+        </div>
+        <div class="adv">
+          <h6>Alexandra Bernardes</h6>
+          <img src="./mulher.jpg" alt="adv3">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+            iste, id expedita, est quis nulla voluptates ipsam debitis molestiae
+            inventore vel. Nulla numquam odio optio assumenda nam. Cum, incidunt
+            praesentium!
+          </p>
+        </div>
+        <div class="adv">
+          <h6>Alfredo Brito</h6>
+          <img src="./homem.jpg" alt="adv4">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+            iste, id expedita, est quis nulla voluptates ipsam debitis molestiae
+            inventore vel. Nulla numquam odio optio assumenda nam. Cum, incidunt
+            praesentium!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FIM SEÇÃO PROFISSIONAIS -->
+
+     <!-- INÍCIO SEÇÃO SERVIÇOS -->
+    <div id="servicos">
+      <div class="slides">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        <input type="radio" name="slide" id="slide5">
+  
+        <div class="servico-adv s1">
+          <img src="./trabalhista.jpg" alt="img1">
+          <div class="texto-servico">
+            <h5>DIREITO TRABALHISTA</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              exercitationem in amet veritatis maiores officia harum possimus odit
+              suscipit blanditiis, soluta aliquam! Odio expedita facilis ea
+              praesentium ut, libero harum. Rem, aperiam provident? Repudiandae
+              quo, officia asperiores ab doloremque tempora, dicta eius porro
+              recusandae incidunt sint pariatur assumenda dolores, nemo magni amet
+              enim repellendus eum nostrum soluta odit. Cupiditate, doloremque?
+              Sint magni, necessitatibus enim non provident eos tenetur quos
+              pariatur beatae quae suscipit animi dicta accusantium? Impedit
+              voluptas corrupti, accusamus cupiditate corporis harum maxime
+              repudiandae velit, suscipit nemo, unde mollitia.
+            </p>
+          </div>
+        </div>
+        <div class="servico-adv">
+          <img src="./criminal.jpg" alt="img2">
+          <div class="texto-servico">
+            <h5>DIREITO CRIMINAL</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              exercitationem in amet veritatis maiores officia harum possimus odit
+              suscipit blanditiis, soluta aliquam! Odio expedita facilis ea
+              praesentium ut, libero harum. Rem, aperiam provident? Repudiandae
+              quo, officia asperiores ab doloremque tempora, dicta eius porro
+              recusandae incidunt sint pariatur assumenda dolores, nemo magni amet
+              enim repellendus eum nostrum soluta odit. Cupiditate, doloremque?
+              Sint magni, necessitatibus enim non provident eos tenetur quos
+              pariatur beatae quae suscipit animi dicta accusantium? Impedit
+              voluptas corrupti, accusamus cupiditate corporis harum maxime
+              repudiandae velit, suscipit nemo, unde mollitia.
+            </p>
+          </div>
+        </div>
+        <div class="servico-adv">
+          <img src="./constitucional.jpg" alt="img3">
+          <div class="texto-servico">
+            <h5>DIREITO CONSTITUCIONAL</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              exercitationem in amet veritatis maiores officia harum possimus odit
+              suscipit blanditiis, soluta aliquam! Odio expedita facilis ea
+              praesentium ut, libero harum. Rem, aperiam provident? Repudiandae
+              quo, officia asperiores ab doloremque tempora, dicta eius porro
+              recusandae incidunt sint pariatur assumenda dolores, nemo magni amet
+              enim repellendus eum nostrum soluta odit. Cupiditate, doloremque?
+              Sint magni, necessitatibus enim non provident eos tenetur quos
+              pariatur beatae quae suscipit animi dicta accusantium? Impedit
+              voluptas corrupti, accusamus cupiditate corporis harum maxime
+              repudiandae velit, suscipit nemo, unde mollitia.
+            </p>
+          </div>
+        </div>
+        <div class="servico-adv">
+          <img src="./assessoria-juridica.jpg" alt="img4">
+          <div class="texto-servico">
+            <h5>ASSESSORIA JURÍDICA</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              exercitationem in amet veritatis maiores officia harum possimus odit
+              suscipit blanditiis, soluta aliquam! Odio expedita facilis ea
+              praesentium ut, libero harum. Rem, aperiam provident? Repudiandae
+              quo, officia asperiores ab doloremque tempora, dicta eius porro
+              recusandae incidunt sint pariatur assumenda dolores, nemo magni amet
+              enim repellendus eum nostrum soluta odit. Cupiditate, doloremque?
+              Sint magni, necessitatibus enim non provident eos tenetur quos
+              pariatur beatae quae suscipit animi dicta accusantium? Impedit
+              voluptas corrupti, accusamus cupiditate corporis harum maxime
+              repudiandae velit, suscipit nemo, unde mollitia.
+            </p>
+          </div>
+        </div>
+        <div class="servico-adv">
+          <img src="./acomp-juridico.jpg" alt="img5">
+          <div class="texto-servico">
+            <h5>ACOMPANHAMENTO JURÍDICO</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              exercitationem in amet veritatis maiores officia harum possimus odit
+              suscipit blanditiis, soluta aliquam! Odio expedita facilis ea
+              praesentium ut, libero harum. Rem, aperiam provident? Repudiandae
+              quo, officia asperiores ab doloremque tempora, dicta eius porro
+              recusandae incidunt sint pariatur assumenda dolores, nemo magni amet
+              enim repellendus eum nostrum soluta odit. Cupiditate, doloremque?
+              Sint magni, necessitatibus enim non provident eos tenetur quos
+              pariatur beatae quae suscipit animi dicta accusantium? Impedit
+              voluptas corrupti, accusamus cupiditate corporis harum maxime
+              repudiandae velit, suscipit nemo, unde mollitia.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="passar-slides">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+        <label for="slide5"></label>
+      </div>
+     </div>
+  
+    </div>
+    <!-- FIM SEÇÃO SERVIÇOS -->
+
+    <!-- INÍCIO SEÇÃO CONTATO -->
+    <div id="contato">
+      <div class="campos-contato">
+        <div class="dias-horarios">
+          <h5>HORÁRIOS DE ATENDIMENTO</h5>
+          <div class="icone-texto">
+            <box-icon color="#363435" name="calendar"></box-icon>
+            <p>Segunda a Sábado</p>
+          </div>
+          <div class="icone-texto">
+            <box-icon color="#363435" name="stopwatch"></box-icon>
+            <p>09h00 às 18h00</p>
+          </div>
+        </div>
+
+        <div class="sociais">
+          <h5>REDES SOCIAIS</h5>
+          <div class="icone-texto">
+            <box-icon color="#363435" type="logo" name="linkedin"></box-icon>
+            <p>/linkedin</p>
+          </div>
+          <div class="icone-texto">
+            <box-icon color="#363435" type="logo" name="instagram"></box-icon>
+            <p>/instagram</p>
+          </div>
+          <div class="icone-texto">
+            <box-icon color="#363435" type="logo" name="facebook"></box-icon>
+            <p>/facebook</p>
+          </div>
+          <div class="icone-texto">
+            <box-icon color="#363435" type="logo" name="twitter"></box-icon>
+            <p>/twitter</p>
+          </div>
+        </div>
+
+        <div class="tel-loc">
+          <h5>CONTATOS</h5>
+          <div class="icone-texto">
+            <box-icon color="#363435" name="home"></box-icon>
+            <p>Rua Fake, 123</p>
+          </div>
+          <div class="icone-texto">
+            <box-icon color="#363435" name="envelope"></box-icon>
+            <p>email@email.com</p>
+          </div>
+          <div class="icone-texto">
+            <box-icon color="#363435" name="phone"></box-icon>
+            <p>(99) 99999-9999</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIM SEÇÃO CONTATO -->
+
+    <div class="rodape">
+      <h3><a href="#inicio">Marina Martins Moreira</a></h3>
+      <span>© Todos os direitos reservados - 2022</span>
+    </div>
+  </body>
+</html>
